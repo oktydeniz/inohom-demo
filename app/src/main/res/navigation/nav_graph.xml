@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/controlsFragment">
+    <fragment
+        android:id="@+id/controlsFragment"
+        android:name="com.odeniz.inohom.view.ControlsFragment"
+        android:label="fragment_controls"
+        tools:layout="@layout/fragment_controls" >
+        <action
+            android:id="@+id/action_controlsFragment_to_controlSubItemsFragment"
+            app:destination="@id/controlSubItemsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/controlSubItemsFragment"
+        android:name="com.odeniz.inohom.view.ControlSubItemsFragment"
+        android:label="fragment_control_sub_items"
+        tools:layout="@layout/fragment_control_sub_items" >
+        <argument
+            android:name="request"
+            app:argType="com.odeniz.inohom.model.ControlListRequest" />
+    </fragment>
+</navigation>

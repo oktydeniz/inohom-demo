@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Inohom</string>
+    <string name="app_name_lower">inohom</string>
+    <string name="accounts">Hesaplar</string>
+    <string name="inohom_logo">inohom+</string>
+    <string name="version_dummy">V.1.7.0</string>
+    <string name="back">Geri</string>
+    <string name="settings">Ayarlar</string>
+    <string name="favorites">Favoriler</string>
+    <string name="lighting">Aydınlatma</string>
+    <string name="curtain">Perde</string>
+    <string name="socket">Priz</string>
+    <string name="scenario">Senaryo</string>
+    <string name="remote">Kumanda</string>
+    <string name="camera">Kamera</string>
+    <string name="alarm">Alarm</string>
+    <string name="intercom">Interkom</string>
+    <string name="system">Sistem</string>
+    <string name="heating">Isıtma</string>
+    <string name="air_conditioning">Klima</string>
+    <string name="sensor">Sensor</string>
+    <string name="site_management">Site Yönetimi</string>
+    <string name="concierge">Konsiyerj</string>
+    <string name="something_went_wrong">Bir şeyler ters gitti!</string>
+    <string name="management_map">Yönetim Harita</string>
+    <string name="serkan_led">Serkan Led</string>
+    <string name="management_spot">Yönetim Spot</string>
+    <string name="lamp">Abajur</string>
+    <string name="board_lighting_2">Pano Aydınlatma 2</string>
+    <string name="technical_lighting">Teknik Aydınlatma</string>
+    <string name="rd_wc">Arge WC</string>
+    <string name="meeting_lighting">Toplantı Aydınlatma</string>
+    <string name="entrance_lighting">Giriş Aydınlatma</string>
+    <string name="kitchen_lighting">Mutfak Aydınlatma</string>
+    <string name="basement_storage_1">Bodrum Depo Ayd 1</string>
+    <string name="field_fault_lighting_1">Saha-Arıza Ayd 1</string>
+    <string name="success">Başarılı!</string>
+
+</resources>
