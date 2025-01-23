@@ -77,21 +77,14 @@ class ControlSubItemsFragment : Fragment() {
                 }
 
                 is ControlSubItemState.ResponseClicked -> {
-                    Toast.makeText(requireContext(), getString(R.string.success), Toast.LENGTH_SHORT).show()
+                    Toast.makeText(
+                        requireContext(),
+                        getString(R.string.success),
+                        Toast.LENGTH_SHORT
+                    ).show()
                 }
             }
         }
-
-        binding.loadingProgress.visibility = View.GONE
-        binding.errorText.visibility = View.GONE
-        binding.gridRecyclerView.visibility = View.VISIBLE
-        val items = generateControlList()
-        gridAdapter = GridAdapter(items) { selectedItem ->
-            Log.d(TAG, "${selectedItem.id}")
-            viewModel.updateControlValue("a2830d60-ddff-4dad-8f3d-dfca0ded2462", 1)
-        }
-
-        loadRecycleView()
     }
 
     private fun loadRecycleView() {

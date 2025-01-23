@@ -21,6 +21,9 @@ android {
     }
 
     buildTypes {
+        debug {
+            applicationIdSuffix = ".debugbuild"
+        }
         release {
             isMinifyEnabled = false
             proguardFiles(
@@ -29,6 +32,25 @@ android {
             )
         }
     }
+
+    flavorDimensions += "appType"
+    productFlavors {
+        create("staging") {
+            dimension = "appType"
+            applicationIdSuffix = ".staging"
+            versionNameSuffix = "-debug"
+            buildConfigField("String", "BASE_URL", "\"85.105.107.53\"")
+            buildConfigField("int", "BASE_PORT", "9095")
+        }
+        create("product") {
+            dimension = "appType"
+            applicationIdSuffix = ".product"
+            versionNameSuffix = "-prod"
+            buildConfigField("String", "BASE_URL", "\"85.105.107.53\"")
+            buildConfigField("int", "BASE_PORT", "9095")
+        }
+    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11

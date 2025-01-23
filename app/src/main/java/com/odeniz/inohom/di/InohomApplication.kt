@@ -2,6 +2,7 @@ package com.odeniz.inohom.di
 
 import android.app.Application
 import android.util.Log
+import com.odeniz.inohom.BuildConfig
 import com.odeniz.inohom.manager.WebSocketManager
 import dagger.hilt.android.HiltAndroidApp
 import okhttp3.Response
@@ -20,8 +21,8 @@ class InohomApplication : Application() {
         super.onCreate()
 
         webSocketManager.connect(
-            ip = "85.105.107.53",
-            port = 9095,
+            ip = BuildConfig.BASE_URL,
+            port = BuildConfig.BASE_PORT,
             listener = object : WebSocketListener() {
                 override fun onOpen(webSocket: WebSocket, response: Response) {
                     super.onOpen(webSocket, response)
